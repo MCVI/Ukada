@@ -22,26 +22,23 @@
               <input name="school" type="text" class="form-control" placeholder="请输入学校全称">
             </div>
             <div class="form-group">
-              <label ><span class="glyphicon glyphicon-heart"></span>队名</label>
-              <input name="nick" type="text" class="form-control" placeholder="请输入比赛所用昵称">
+              <input name="nick" type="hidden" value='0' class="form-control" placeholder="请输入比赛所用昵称">
             </div>
 
             <div class="form-group">
-              <label ><span class="glyphicon glyphicon-user"></span>队长</label>
+              <label ><span class="glyphicon glyphicon-user"></span>姓名</label>
               <input name="teamer1" type="text" class="form-control" placeholder="请输入真实姓名">
             </div>
             <div class="form-group">
-              <label ><span class="glyphicon glyphicon-user"></span>队员</label>
-              <input name="teamer2" type="text" class="form-control" placeholder="请输入真实姓名">
+              <input name="teamer2" value='0' type="hidden" >
             </div>
             <div class="form-group">
-              <label ><span class="glyphicon glyphicon-user"></span>队员</label>
-              <input name="teamer3" type="text" class="form-control" placeholder="请输入真实姓名">
+              <input name="teamer3" type="hidden" value='0'>
             </div>
 
             <div class="form-group">
               <label ><span class="glyphicon glyphicon-phone"></span>联系电话</label>
-              <input  name="tel" type="text" class="form-control" placeholder="请输入有效的联系电话">
+              <input  name="tel" type="text" class="form-control"  placeholder="请输入有效的联系电话">
             </div>
             <div class="form-group">
               <label ><span class="glyphicon glyphicon-tree-deciduous"></span>QQ</label>
@@ -59,11 +56,10 @@
         <td>学校</td>
         <td><%= user.school%></td>
       </tr>
-      <tr>
-        <td>队名</td>
-        <td><%= user.nick%></td>
+	  <tr>
+        <td>姓名</td>
+        <td><%= user.teamer1%></td>
       </tr>
-
       <tr>
         <td>联系电话</td>
         <td><%= user.phone%></td>
@@ -73,21 +69,12 @@
         <td>联系邮箱</td>
         <td><%= user.email%></td>
       </tr>
-      <tr>
-        <td>队长</td>
-        <td><%= user.teamer1%></td>
+	  <tr>
+        <td>QQ</td>
+        <td><%= user.qq%></td>
       </tr>
 
-      <tr>
-        <td>队员</td>
-        <td><%= user.teamer2%></td>
-      </tr>
-
-      <tr>
-        <td>队员</td>
-        <td><%= user.teamer3%></td>
-      </tr>
-    </tbody>
+     </tbody>
   </table>
   信息有误？<a href="/reapply">重新报名</a>
 </div>
