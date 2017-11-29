@@ -97,7 +97,7 @@ router.post('/apply', checkLogin, function(req, res) {
 		qq: req.body.qq
 	}
 	console.log(_apply);
-	if (_apply.nick == '' || _apply.nick.length > 10 ||
+	if (_apply.nick == '' || _apply.nick.length > 15 ||
     _apply.teamer1 == '' || _apply.teamer1.length > 10 ||
     _apply.teamer2 == '' || _apply.teamer2.length > 10 ||
 		_apply.teamer3 == '' || _apply.teamer3.length > 10 ||
