@@ -19,7 +19,7 @@
 		<thead>
 			<tr>
 				<th>email</th>
-<!--				<th>team</th>1	-->
+				<th>id</th>
 				<th>name</th>
 <!--				<th>member</th>
 				<th>member</th> //-->
@@ -34,7 +34,7 @@
 	<% users.forEach(function(user, index) { %>
 		<tr <% if (user.statu == 1) {%> class="warning"<%} else if (user.statu == 2) {%> class="success" <% } %> >
 			<td><%= user.email%></td>
-<!--			<td><%= user.nick%></td>	-->
+			<td><%= user.nick%></td>
 			<td><%= user.teamer1%></td>
 <!--			<td><%= user.teamer2%></td> 
 			<td><%= user.teamer3%></td> -->
