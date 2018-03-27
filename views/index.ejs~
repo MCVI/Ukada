@@ -15,7 +15,7 @@
       <div class="jumbotron cover" >
         <div class="container text-center" style="text-shadow: 0 0 16px #000;">
           <h2>华中师范大学</h2>
-          <h1>2018年ACM程序设计竞赛</h1>
+          <h1>2017年ACM程序设计竞赛</h1>
 <!--          <p class="lead">2016<sup>th</sup> Programming Contest of CCNU</p> -->
 <p> </p>
           <p class="lead text-danger">
@@ -32,13 +32,13 @@
         </div>
         <div class="col-sm-6">
           <p class="lead text-center">
-            <span class="glyphicon glyphicon-calendar"></span> 2018 年 5 月 13 日 <br>10:00 至 15:00
+            <span class="glyphicon glyphicon-calendar"></span> 2017 年 5 月 7 日 <br>10:00 至 15:00
           </p>
         </div>
         <div class="col-sm-6">
           <p class="lead text-center">
             <span class="glyphicon glyphicon-map-marker"></span>
-            <a data-toggle="modal" data-target="#location-qr">九号楼 11楼</a>
+            <a data-toggle="modal" data-target="#location-qr">九号楼 1117 室</a>
           </p>
         </div>
       </div>
@@ -98,7 +98,7 @@
               测试机的操作系统为 Ubuntu Linux，可用的编译器有：
               <ul class="lead">
                 <li>GCC 5.2.1</li>
-                <!-- <li><del>Open JDK 7</del></li> -->
+                <li><del>Open JDK 7</del></li>
               </ul>
             </p>
           </div>
