@@ -6,6 +6,7 @@ var express = require('express');
 var router = express.Router();
 var user = require('../modules/user');
 var md5 = require('md5');
+var school_list = require('../modules/school_list');
 
 /* GET home page. */
 router.get('/', function(req, res) {
@@ -15,7 +16,7 @@ router.get('/', function(req, res) {
   });
 });
 
-/*
+
 router.get('/team',  function(req, res, next) {
 	user.getAll(function(err, ans) {
 		res.render('team', {
@@ -24,7 +25,7 @@ router.get('/team',  function(req, res, next) {
 		});
 	});
 });
-*/
+
 router.post('/login', checkLogout, function(req, res) {
 	user.getByEmail(req.body.email, function(err, ans) {
 		if (ans.toString() == '') {
@@ -63,6 +64,7 @@ router.get('/apply', checkLogin, function(req, res) {
         req.session.user = _user;
         res.render('apply', {
           user: req.session.user,
+		  schools:school_list,
           message: req.flash('message').toString()
         });
       });
@@ -181,8 +183,8 @@ router.post('/regist', checkLogout, function(req, res) {
 					password: md5(req.body.password),
 					statu: 0,
 					nick: null,
-          teamer1: null,
-          teamer2: null,
+          			teamer1: null,
+          			teamer2: null,
 					teamer3: null,
 					school: null,
 					phone: null,

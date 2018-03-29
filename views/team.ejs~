@@ -22,7 +22,7 @@
 					  <div class="panel-heading"><%= user.nick%></div>
 					  <div class="panel-body">
 					  	<ul class="list-group">
-					  		<li><%= user.school%></li>
+					  		<li>学校:<%= user.school%></li>
 							<li><%= user.teamer1%></li>
 							<li><%= user.teamer2%></li>
 							<li><%= user.teamer3%></li>

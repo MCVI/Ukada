@@ -21,7 +21,7 @@
               <label ><span class="glyphicon glyphicon-road"></span>学校</label>
 					<select name="school" type="select" class="form-control" value="请选择学校">
          		<% schools.forEach(function(school,index) { %>
-             		<option value="<%= school %>"><%= school %></option>
+             		<option value="华中师范大学"><%= school %></option>
               	<% }) %>
              </select>
              </div>
