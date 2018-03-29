@@ -15,7 +15,7 @@ router.get('/', function(req, res) {
   });
 });
 
-
+/*
 router.get('/team',  function(req, res, next) {
 	user.getAll(function(err, ans) {
 		res.render('team', {
@@ -24,7 +24,7 @@ router.get('/team',  function(req, res, next) {
 		});
 	});
 });
-
+*/
 router.post('/login', checkLogout, function(req, res) {
 	user.getByEmail(req.body.email, function(err, ans) {
 		if (ans.toString() == '') {
