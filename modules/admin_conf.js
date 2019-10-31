@@ -1,6 +1,6 @@
 var admin_conf = {
 	name : 'admin',
-	password : 'admin123',
+	password : 'MCVI1106',
 }
 
 module.exports = admin_conf;
